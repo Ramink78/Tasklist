@@ -1,6 +1,4 @@
-package tasklist
-
-enum class Menu(val title: String) {
+enum class Action(val title: String) {
     ADD("add"),
     PRINT("print"),
     EDIT("edit"),
