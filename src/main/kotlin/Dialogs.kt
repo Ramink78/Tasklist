@@ -1,6 +1,3 @@
-import tasklist.Menu
-import tasklist.Priority
-
 // Date
 fun showInputDateDialog() = println("Input the date (yyyy-mm-dd):")
 fun showInvalidDateDialog() = println("The input date is invalid")
@@ -21,7 +18,7 @@ fun showAppExitingDialog() = println("Tasklist exiting!")
 
 // Actions
 fun showAskActionDialog() =
-    println("Input an action (${Menu.values().joinToString(", ") { it.name.lowercase() }}):")
+    println("Input an action (${Action.values().joinToString(", ") { it.name.lowercase() }}):")
 
 fun showInvalidActionDialog() = println("The input action is invalid")
 

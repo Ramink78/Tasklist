@@ -1,5 +1,3 @@
-package tasklist
-
 import java.io.File
 
 const val tasksFileName = "tasklist.json"

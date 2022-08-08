@@ -1,5 +1,3 @@
-package tasklist
-
 fun priorityToColor(priority: Priority): String {
     return when (priority) {
         Priority.C -> "\u001B[101m \u001B[0m"

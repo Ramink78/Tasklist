@@ -1,15 +1,12 @@
-package tasklist
-
 data class Task(
+    var id: Int = 0,
     val text: String,
     val priority: String,
     val date: String,
     val time: String,
 ) {
-     val dueDateTag: Char
+    val dueDateTag: Char
         get() = getDueTag(date)
-    val id: Int
-        get() = TaskRepository.getAllTasks().indexOf(this) + 1
 
     override fun toString(): String {
         val taskTextLines = text.lines()
